@@ -1,8 +1,9 @@
 [build]
   command = "pnpm run build"
   publish = "packages/site/dist"
+  functions = "packages/site/functions"
 
 [dev]
-  command = "pnpm --filter @my-project/site dev"
+  command = "pnpm --filter @my-pnpm-project/site dev"
   framework = "#custom"
-  targetPort = 5173  # Matches Vite's default port
+  targetPort = 5173
